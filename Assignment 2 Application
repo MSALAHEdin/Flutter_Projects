@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+
+class Birthday extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text('BirthDay Card'),
+      ),
+      body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Image(height: 300,
+                  width: double.infinity,
+                  image: NetworkImage('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/happy-birthday-greeting-card-gold-glam-wish-design-template-cfdc31e59503990ba97c10ad202422a7_screen.jpg?ts=1601497694')
+              ),
+              Text('Happy BirthDay!!',
+                style: TextStyle(fontSize: 30,color: Colors.black),
+              ),
+            ],
+          )
+      ),
+    );
+  }
+}
